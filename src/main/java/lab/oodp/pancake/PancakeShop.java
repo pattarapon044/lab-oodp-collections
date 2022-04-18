@@ -43,7 +43,7 @@ public class PancakeShop {
 				System.out.println("Oh no! " + e.getMessage());
 				System.out.println("We ran out of pancakes...");
 				System.out.println("There were still " + this.customerQueue.size() + " unfed customers today...");
-				break;
+				return;
 			}
 		}
 

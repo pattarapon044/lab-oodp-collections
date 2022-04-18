@@ -52,7 +52,7 @@ public class Customer {
 				System.out.println(getName() + " ate " + p + "!");
 				desiredMealSize--;
 			} catch (NoSuchElementException e) {
-				throw new HungryException("no more pancake in the stack");
+				throw new HungryException(getName() + " is still hungry");
 			}
 
 		}
