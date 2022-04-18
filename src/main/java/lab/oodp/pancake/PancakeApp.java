@@ -30,7 +30,7 @@ public class PancakeApp {
         int numCustomers = Util.randomValueBetwen(100, 200);
 
         // TODO: remove null below,initialize the queue variable appropriately
-        Deque<Customer> queue = null;
+        Deque<Customer> queue = new ArrayDeque<Customer>();
 
         for (int i = 1; i <= numCustomers; i++) {
 
@@ -41,7 +41,7 @@ public class PancakeApp {
             // TODO Add customer to the queue. 
             //HINT: Remember, queues are First-In-First-Out.
             //queue.
-
+            queue.add(customer);
         }
 
         return queue;
